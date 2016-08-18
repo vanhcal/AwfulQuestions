@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/whats_your_name"
+        android:id="@+id/whatsYourName"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/nameInput"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/bToNextBtn"
+        android:background="@drawable/arrowsmall2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/whatsYourName"
+        android:layout_toEndOf="@+id/nameInput"
+        android:layout_marginTop="26dp"
+        android:onClick="startGame"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:ems="10"
+        android:id="@+id/nameInput"
+        android:textColorHint="@color/green"
+        android:textColor="@color/green"
+        android:background="@drawable/line3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp" />
+</RelativeLayout>
